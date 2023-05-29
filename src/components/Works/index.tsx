@@ -16,7 +16,7 @@ export default function Works({ works }: any) {
         <>
             <Heading textAlign="center">Portfolio</Heading>
             <Box p="3" id="portfolio">
-                <Tabs maxW="70vw" w="70vw" variant="soft-rounded" isFitted colorScheme="blue">
+                <Tabs variant="soft-rounded" isFitted colorScheme="blue">
                     <TabList>
                         <Tab>Computer Science Projects</Tab>
                         <Tab>Articles</Tab>
