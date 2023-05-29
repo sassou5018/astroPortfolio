@@ -10,7 +10,7 @@ export const post: APIRoute = async ({ request }) => {
         })
     } catch (e) {
         console.log(e)
-        return new Response(JSON.stringify({ message: "error" }), {
+        return new Response(JSON.stringify({ message: JSON.stringify(e) }), {
             headers: {
                 'content-type': 'application/json',
             },
