@@ -18,8 +18,8 @@ const sendEmail = async (emailData: EmailData) => {
         secure: false,
         requireTLS: true,
         auth: {
-            user: import.meta.env.USER,
-            pass: import.meta.env.PWD
+            user: "yassinebenahmede@gmail.com",
+            pass: "xqxjotnqxvlpezjj"
         }
     });
     return transporter
