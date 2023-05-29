@@ -1,0 +1,8 @@
+---
+export interface props{
+    href: string;
+}
+
+const {href} = Astro.props;
+---
+<li><a href={href}><slot/></a></li>

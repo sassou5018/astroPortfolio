@@ -1,0 +1,49 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/Card.astro'
+import Terminal from '../components/Terminal.astro'
+import Modal from '../components/Modal.astro'
+import Navbar from '../components/Navbar.astro'
+import NavItem from '../components/NavItem.astro'
+import Hero from '../components/Hero.astro'
+import WorksTab from '../components/WorksTab'
+import Footer from '../components/Footer.astro'
+import ToggleColorMode from '../components/toggleColorMode'
+import ContactForm from '../components/contactForm'
+---
+
+<Layout title='Welcome to Astro.'>
+    <main>
+        <Navbar title='Yassine'>
+            <NavItem href='#about'>About</NavItem>
+            <NavItem href='#portfolio'>Portfolio</NavItem>
+            <li><label for='my-modal-4'>Contact</label></li>
+            <ToggleColorMode client:only='react' />
+        </Navbar>
+        <section id='about'>
+            <Hero imgUrl='bg.jpeg'>
+                I'm a <b>CS Student</b> and a <b
+                    >Full Stack JS / JAVA Developper</b
+                >... among other things.
+                <Fragment slot='title'>I'm <b>Yassine Ben Ahmed</b>.</Fragment>
+                <Fragment slot='buttons'>
+                    <label for='my-modal-4' class='btn btn-primary'>Contact me</label>
+                    <a
+                        class='btn btn-secondary'
+                        href='resume.pdf'
+                        target='_blank'>Download CV</a
+                    >
+                </Fragment>
+            </Hero>
+        </section>
+        <div class='mt-7 flex justify-center'>
+            <div class='w-fit border-2 rounded-lg'>
+                <WorksTab client:only='react' />
+            </div>
+        </div>
+        <Footer />
+        <Modal>
+			<ContactForm client:visible />
+		</Modal>
+    </main>
+</Layout>
