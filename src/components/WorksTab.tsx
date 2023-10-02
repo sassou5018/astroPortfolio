@@ -7,7 +7,8 @@ import ColorProvider from './ColorProvider'
 
 const works = [
     {cs: [
-      {title: 'Cowardice', description: "Testing out NextJS13 Beta features (Serverside components). Simple blog", image:"https://iili.io/HOHviEx.md.png", link:"https://cowardice.benahmed.tech", isLive: true, github: "https://github.com/sassou5018/cowardice", tag:["NextBeta", "Incomplete"] },
+      {title: 'Peer 2 peer demo', description: "Testing peer to peer communication", image:"https://iili.io/JdgZBNS.md.png", link:"https://p2pdemo.benahmed.tech/", isLive: true, github: "https://github.com/sassou5018/p2pdemo", tag:["WebRtc"] },
+      {title: 'Cowardice', description: "Testing out NextJS13 Beta features (Serverside components). Simple blog", image:"https://iili.io/HOHviEx.md.png", link:"https://cowardice.benahmed.tech", isLive: false, github: "https://github.com/sassou5018/cowardice", tag:["NextBeta", "Incomplete"] },
       {title: 'Dark Fools', description: "A simple 2D Platformer / RPG made in Unity for a class project", image: 'https://iili.io/HOHvd57.md.png', link:"https://github.com/sassou5018/Dark-Fools/releases/tag/dev-build", github:"https://github.com/sassou5018/Dark-Fools", tag:["Unity", "C#"]},
       {title: 'Lutris Artwork Downloader Tool', description:"A simple tool that downloads artwork for your lutris library of games if you're lazy", link:"https://github.com/sassou5018/lutris-art-downloader", github:"https://github.com/sassou5018/lutris-art-downloader", image:"", tag:["NodeJS", "Linux", "CLI"]},
       {title:'Lyricfy', description: "Small NextJs app that checks your currently playing track on spotify and returns the lyrics for it from genius.", image:"https://iili.io/HnmB84p.md.png", link:"https://lyricfy.benahmed.tech/", tag:["NextJS", "Spotify"], isLive: true, github:"https://github.com/sassou5018/lyricfy"},
